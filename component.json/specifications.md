@@ -38,6 +38,8 @@
 
 ## .repository
 
+  alias: .repo
+
   The __public__ component __MUST__ have a "repository" property,
   this is registry end-point consisting of `<username>/<project>`,
   for example "visionmedia/page.js" or "component/dialog".
