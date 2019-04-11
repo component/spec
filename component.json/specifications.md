@@ -60,13 +60,13 @@
   A __public__ component __SHOULD__ list a few keywords.
 
 ## .main
-
-  It is recommended that you use "index.js" for the main component file,
-  however if you use another filename,
-  you __MUST__ define a "main" field for that.
+  
+  This file will be returned when you require its component and autorequired by the build process.
+  It is recommended that you use "index.js" for the main component file.
+  If you omit the "main" field, the first file in the "scripts" array will be used.
   A component __MUST__ have only one "main" file specified,
   and it __MUST__ still be listed in the "scripts" array.
-
+  
 ## .scripts
 
   The `scripts` field explicitly specifies the scripts for this component. For __public__ components, these __must__ be regular JavaScript files. For __private__ components, these __should__ be regular Javascript files.
